@@ -30,7 +30,7 @@ The ten most important features in predicting customer churn are visualized as f
 
 Our final model performed similarly on the train and test data, and with an f1 score of 0.79, it is proving to be usable for prediction of churn. Further tuning with a larger dataset would likely produce superior results as our initial dataset of 3,333 records was relatively small. To further explore our model's findings, we performed some analysis of the most important features it identified.
 
-![](images/mean_psft_zip.png)
+![](images/day_charge.png)
 
 * __Total Daily Charge__ For our exploration of total daily charge, we binned all customers into equally sized groups based on 20% quantiles of cost. Recall that our model predicted the amount a customer pays as the most important predictor of customer churn. When exploring churn within our quantiles, we observe that the highest rate of churn occurs among customers that pay the most for their service, which logically makes sense. Further, churn is second highest among customers that pay the least for their service. While initially surprising, in a pay by use structure, there may be a correlation between how much a customer pays for their service and how much they actually use it. In the smallest bucket of daily charge, we are likely capturing customers that rarely use their service and end up creating churn when they cancel an unused product. Further analysis would be needed to confirm.
 
